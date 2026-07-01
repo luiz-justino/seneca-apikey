@@ -6,12 +6,9 @@
 [![npm version](https://img.shields.io/npm/v/@seneca/apikey.svg)](https://npmjs.com/package/@seneca/apikey)
 [![build](https://github.com/senecajs/seneca-apikey/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-apikey/actions/workflows/build.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-apikey/badge.svg)](https://snyk.io/test/github/senecajs/seneca-apikey)
-[![npm version][npm-badge]][npm-url]
-[![Build Status][travis-badge]][travis-url]
-[![Coverage Status][coveralls-badge]][coveralls-url]
-[![Maintainability][codeclimate-badge]][codeclimate-url]
+[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-apikey/badge.svg?branch=master)](https://coveralls.io/github/senecajs/seneca-apikey?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/79f285a2bfb61305af0f/maintainability)](https://codeclimate.com/github/senecajs/seneca-apikey/maintainability)
 [![DeepScan grade](https://deepscan.io/api/teams/5016/projects/11602/branches/173763/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=11602&bid=173763)
-[![Dependency Status][david-badge]][david-url]
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
@@ -24,7 +21,7 @@ npm install seneca-promisify // dependency
 npm install seneca-entity // dependency
 npm install @seneca/user // dependency
 npm install @seneca/apikey
-```
+```js
 
 ## Quick Example
 
@@ -36,7 +33,7 @@ const Seneca = require('seneca')
 var seneca = Seneca().use('promisify').use('entity').use('apikey')
 
 // TODO: complete quick example
-```
+```js
 
 ## More Examples
 
@@ -65,7 +62,7 @@ Set plugin options when loading with:
 
 seneca.use('apikey', { name: value, ... })
 
-```
+```js
 
 <small>Note: <code>foo.bar</code> in the list above means
 <code>{ foo: { bar: ... } }</code></small>
@@ -96,12 +93,12 @@ Generate a new API key.
 
 ##### Replies With
 
-```
+```json
 {
   ok: '`true` if successful',
   key: 'key string'
 }
-```
+```js
 
 ---
 
@@ -117,12 +114,12 @@ Verify an API key.
 
 ##### Replies With
 
-```
+```json
 {
   ok: '`true` if verified',
   why: 'explanation code'
 }
-```
+```js
 
 ---
 
@@ -153,10 +150,4 @@ Licensed under [MIT][].
 
 [mit]: ./LICENSE
 [seneca.js]: https://www.npmjs.com/package/seneca
-[coveralls-badge]: https://coveralls.io/repos/github/senecajs/seneca-apikey/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/senecajs/seneca-apikey?branch=master
-[codeclimate-badge]: https://api.codeclimate.com/v1/badges/79f285a2bfb61305af0f/maintainability
-[codeclimate-url]: https://codeclimate.com/github/senecajs/seneca-apikey/maintainability
-[npm-badge]: https://img.shields.io/npm/v/@seneca/apikey.svg
-[npm-url]: https://npmjs.com/package/@seneca/apikey
 [senecajs org]: https://github.com/senecajs/
