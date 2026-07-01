@@ -89,7 +89,7 @@ Generate a new API key.
 
 ##### Replies With
 
-```json
+```js
 {
   ok: '`true` if successful',
   key: 'key string'
@@ -109,7 +109,7 @@ Verify an API key.
 
 ##### Replies With
 
-```json
+```js
 {
   ok: '`true` if verified',
   why: 'explanation code'
