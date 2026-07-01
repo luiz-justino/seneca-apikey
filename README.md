@@ -12,7 +12,6 @@
 [![Maintainability][codeclimate-badge]][codeclimate-url]
 [![DeepScan grade](https://deepscan.io/api/teams/5016/projects/11602/branches/173763/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=11602&bid=173763)
 [![Dependency Status][david-badge]][david-url]
-[![Gitter][gitter-badge]][gitter-url]
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
@@ -64,9 +63,7 @@ Set plugin options when loading with:
 
 ```js
 
-
 seneca.use('apikey', { name: value, ... })
-
 
 ```
 
@@ -133,8 +130,6 @@ Verify an API key.
 
 ## Motivation
 
-
-
 ## Support
 
 If you're using this module and need help, you can:
@@ -145,13 +140,9 @@ If you're using this module and need help, you can:
 
 ## API
 
-
-
 ## Contributing
 
 The [Senecajs org](https://github.com/senecajs/) encourages open participation. If you feel you can help in any way, be it with documentation, examples, extra testing, or new features please get in touch.
-
-
 
 ## Background
 
@@ -162,16 +153,10 @@ Licensed under [MIT][].
 
 [mit]: ./LICENSE
 [seneca.js]: https://www.npmjs.com/package/seneca
-[travis-badge]: https://travis-ci.com/senecajs/seneca-apikey.svg?branch=master
-[travis-url]: https://travis-ci.com/senecajs/seneca-apikey
 [coveralls-badge]: https://coveralls.io/repos/github/senecajs/seneca-apikey/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/senecajs/seneca-apikey?branch=master
 [codeclimate-badge]: https://api.codeclimate.com/v1/badges/79f285a2bfb61305af0f/maintainability
 [codeclimate-url]: https://codeclimate.com/github/senecajs/seneca-apikey/maintainability
 [npm-badge]: https://img.shields.io/npm/v/@seneca/apikey.svg
 [npm-url]: https://npmjs.com/package/@seneca/apikey
-[david-badge]: https://david-dm.org/senecajs/seneca-apikey.svg
-[david-url]: https://david-dm.org/senecajs/seneca-apikey
-[gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
-[gitter-url]: https://gitter.im/senecajs/seneca
 [senecajs org]: https://github.com/senecajs/
