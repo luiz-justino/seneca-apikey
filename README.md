@@ -15,26 +15,24 @@
 
 ## Install
 
-```sh
+```
 npm install seneca
 npm install seneca-promisify // dependency
 npm install seneca-entity // dependency
 npm install @seneca/user // dependency
 npm install @seneca/apikey
-```js
-
+```
 ## Quick Example
 
 Register an apikey and then create an automatic login for testing.
 
-```js
+```
 const Seneca = require('seneca')
 
 var seneca = Seneca().use('promisify').use('entity').use('apikey')
 
 // TODO: complete quick example
-```js
-
+```
 ## More Examples
 
 Because Seneca treats messages as first-class citizens, 90% of unit
@@ -58,12 +56,10 @@ detailed usage examples:
 
 Set plugin options when loading with:
 
-```js
-
+```
 seneca.use('apikey', { name: value, ... })
 
-```js
-
+```
 <small>Note: <code>foo.bar</code> in the list above means
 <code>{ foo: { bar: ... } }</code></small>
 
@@ -93,13 +89,12 @@ Generate a new API key.
 
 ##### Replies With
 
-```json
+```
 {
   ok: '`true` if successful',
   key: 'key string'
 }
-```js
-
+```
 ---
 
 #### &laquo; `sys:apikey,verify:key` &raquo;
@@ -114,13 +109,12 @@ Verify an API key.
 
 ##### Replies With
 
-```json
+```
 {
   ok: '`true` if verified',
   why: 'explanation code'
 }
-```js
-
+```
 ---
 
 <!--END:action-desc-->
